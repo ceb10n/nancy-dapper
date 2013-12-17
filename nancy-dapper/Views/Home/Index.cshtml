@@ -1,0 +1,13 @@
+﻿@inherits Nancy.ViewEngines.Razor.NancyRazorViewBase<IEnumerable<nancy_dapper.App.Model.Music>>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Nancy n' Dapper example by Rafael O. Marques</title>
+</head>
+<body>
+    @foreach (var music in Model)
+    {
+        <p>@music.Artist - @music.Name</p>
+    }
+</body>
+</html>
